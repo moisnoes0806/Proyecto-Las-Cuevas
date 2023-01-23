@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="hero">
 
-        <video autoplay loop muted plays-inline className="back-video">
+        <video autoPlay muted loop playsInline className="back-video">
             <source src={video} type="video/mp4" />
         </video>
 
