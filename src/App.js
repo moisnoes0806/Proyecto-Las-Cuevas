@@ -1,28 +1,20 @@
 import video from './assets/video.mp4';
 import './App.css';
+import Header from './components/header.js'
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="hero">
+    return (
+        <div className="hero">
 
-        <video autoPlay muted loop playsInline className="back-video">
-            <source src={video} type="video/mp4" />
-        </video>
+            <video autoPlay muted loop playsInline className="back-video">
+                <source src={video} type="video/mp4" />
+            </video>
+            <Header />
+            <Outlet/>
 
-        <nav>
-            <ul>
-                <li> <a href="#">INICIO</a> </li>
-                <li> <a href="#">GARRAFONES</a> </li>
-                <li> <a href="#">CONTACTO</a> </li>
-                <li> <a href="#">SOCIAL</a> </li>
-            </ul>
-        </nav>
-        <div className="content">
-            <h1>LasCuevas</h1>
-            <a href="#">BUSCAR</a>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;
