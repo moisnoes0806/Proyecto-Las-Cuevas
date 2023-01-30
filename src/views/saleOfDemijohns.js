@@ -111,7 +111,7 @@ const SaleOfDemijohns = () => {
                                                 <img
                                                     alt={"imagen garragon" + index}
                                                     src={demijohn.src}
-                                                    style={{ maxHeight: "150px", objectFit: "contain" }}
+                                                    style={{maxHeight: "150px", objectFit: "contain" }}
                                                 />
                                             }
                                         >
